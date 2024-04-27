@@ -10,28 +10,28 @@ const fs = require('node:fs');
 
 //fs.writeFile(file, data[, options], callback)
 
-// fs.writeFile('a1.txt',"helo",function(err){
-//     if(err) console.log(err)
-//     else console.log("done")
-// })
+fs.writeFile('a1.txt',"helo",function(err){
+    if(err) console.log(err)
+    else console.log("done")
+})
 
 //--- READ
 
 //fs.readFile(path[, options], callback)
 
-// fs.readFile('a1.txt','utf-8',function(err , data){
-//     if(err) console.log(err)
-//     else console.log(data)
-// })
+fs.readFile('a1.txt','utf-8',function(err , data){
+    if(err) console.log(err)
+    else console.log(data)
+})
 
 //--- APPEND
 
-// fs.appendFile(path, data[, options], callback)
+//fs.appendFile(path, data[, options], callback)
 
-// fs.appendFile("a1.txt","appended", function(err){
-//     if(err) console.log(err)
-//     else console.log("appended")
-// })
+fs.appendFile("a1.txt","appended", function(err){
+    if(err) console.log(err)
+    else console.log("appended")
+})
 
 
 //--- DELETE
